@@ -1,0 +1,40 @@
+# ── 공모전 데이터 보안 규정: 원본/가공/집계 데이터 파일은 어떤 형태로도 커밋 금지 ──
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.json
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.feather
+
+# 데이터가 들어있을 만한 폴더 이름 (그대로 두는 경우가 많아 폴더째 차단)
+data/
+Data/
+Input/
+input/
+raw/
+dataset/
+
+# 참가신청서류 등 개인정보 포함 문서 (실수 방지용, 실제로도 올리지 않을 것)
+*참가신청서류*
+*보안서약*
+
+# API 키/시크릿 관련
+.env
+*.pem
+*api_key*
+*secret*
+
+# 노트북/파이썬 캐시
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS/에디터 잡파일
+.DS_Store
+Thumbs.db
+*.log
